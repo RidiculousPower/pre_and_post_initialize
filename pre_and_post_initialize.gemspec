@@ -3,12 +3,12 @@ require 'date'
 
 Gem::Specification.new do |spec|
 
-  spec.name                      = 'pre_initialize'
-  spec.rubyforge_project         = 'pre_initialize'
+  spec.name                      = 'pre_and_post_initialize'
+  spec.rubyforge_project         = 'pre_and_post_initialize'
   spec.version                   = '0.0.1'
 
-  spec.summary                   = "Creates event chain prior to object initialization."
-  spec.description               = "Adds Object#pre_initialize so that events can occur prior to Object#initialize chain."
+  spec.summary                   = "Creates event chain before and after object initialization."
+  spec.description               = "Adds Object#pre_initialize so that events can occur before and after Object#initialize chain."
 
   spec.authors                   = [ 'Asher' ]
   spec.email                     = 'asher@ridiculouspower.com'
