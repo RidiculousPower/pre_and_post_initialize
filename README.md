@@ -1,6 +1,6 @@
 # Pre-And-Post-Initialize #
 
-http://rubygems.org/gems/pre\_and\_post\_initialize
+http://rubygems.org/gems/pre_and_post_initialize
 
 # Summary #
 
