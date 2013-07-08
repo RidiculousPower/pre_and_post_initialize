@@ -18,6 +18,8 @@ Adds Object#pre\_initialize and Object#post\_initialize so that events can occur
 
 ```ruby
 class AnyClass
+	
+  extend PreAndPostInitialize
 
   def pre_initialize( *initialize_args, & initialize_block )
     # anything here will happen before #initialize
