@@ -22,6 +22,8 @@ module ::PreAndPostInitialize::ObjectInstance
   #                   No arguments are expected here, but any will be passed to super.
   #
   def pre_initialize( *args, & block )
+    # call to super in case we extend Class or Module, so we can stack calls to pre_initialize
+    super if defined?( super )
     # nothing here - subclasses define
   end
 
@@ -40,6 +42,8 @@ module ::PreAndPostInitialize::ObjectInstance
   #                   No arguments are expected here, but any will be passed to super.
   #
   def post_initialize( *args, & block )
+    # call to super in case we extend Class or Module, so we can stack calls to post_initialize
+    super if defined?( super )
     # nothing here - subclasses define
   end
   

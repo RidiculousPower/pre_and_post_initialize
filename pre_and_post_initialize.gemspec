@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
 
   spec.name                      = 'pre_and_post_initialize'
   spec.rubyforge_project         = 'pre_and_post_initialize'
-  spec.version                   = '0.0.1'
+  spec.version                   = '0.0.2'
 
   spec.summary                   = "Creates event chain before and after object initialization."
   spec.description               = "Adds Object#pre_initialize so that events can occur before and after Object#initialize chain."
