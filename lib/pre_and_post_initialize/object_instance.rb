@@ -4,6 +4,30 @@
 # Adds #pre_initialize and #post_initialize before and after call to #initialize.
 #
 module ::PreAndPostInitialize::ObjectInstance
+
+  ######################
+  #  initialize_chain  #
+  ######################
+  
+  ###
+  # Calls chain of pre_initialize, initialize, post_initialize.
+  #
+  # @overload initialize( any_arg, ... )
+  #
+  #   @param [Object] any_arg
+  #
+  #                   Any arguments can be used for initialize.
+  #                   No arguments are expected here, but any will be passed to super.
+  #
+  def initialize_chain( *args, & block )
+   
+    pre_initialize( *args, & block )
+    initialize( *args, & block )
+    post_initialize( *args, & block )
+    
+    return self
+    
+  end
   
   ####################
   #  pre_initialize  #

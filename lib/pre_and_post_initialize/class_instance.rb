@@ -23,11 +23,7 @@ module ::PreAndPostInitialize::ClassInstance
 
     instance = allocate
 
-    instance.instance_eval do
-      pre_initialize( *args, & block )
-      initialize( *args, & block )
-      post_initialize( *args, & block )
-    end
+    instance.initialize_chain( *args, & block )
     
     return instance
     
